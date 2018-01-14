@@ -67,7 +67,37 @@
 	color: white;
 }
 
-	
+body {font-family: "Lato", sans-serif; padding-top: 5px;}
+
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    padding-right: 200px;
+    text-align: left;
+}
+
+#London {background-color:red;}
+#Paris {background-color:#3498db;}
+#Tokyo {background-color:blue;}
+#Oslo {background-color:orange;}		
 </style>
 <body>
 <font face="oxygen">
@@ -77,27 +107,49 @@
   <a href="index.html"><img src="Images/Rendered-Logo-(Version-2).png" alt="Rendered-Logo" style="width: 150px; height: auto; align-items: center; background-color: whitesmoke; padding: 10px;"></a>
  </div>
   <div style="padding-top: 20px;">
-  <a href="Basic's of HTML.html">Introduction To HTML (Theory)</a>
-  <a href="Basic HTML Document Layout.html">Basic HTML Layout</a>
-  <a class="active" href="HTML Heading and Paragraph Elements.html">HTML Heading and Paragraphs</a>
+<a href="Basic's of HTML.html">Introduction To HTML</a>
+  <a href="Basic HTML Document Layout.html">Basic HTML Document Layout</a>
+  <a class="active" href="HTML Heading and Paragraph Elements.html">HTML Heading and Paragraph Elements</a>
   <a href="HTML Attributes and Other Elements.html">HTML Attributes and Other Elements</a>
   </div>
 </div>
 
 <iframe width="854" height="480" style="margin-left: 220px; padding: 25px;" src="https://www.youtube.com/embed/ZGmUlg3HAvo?list=PLkpLFijnmDEzMyoMtC-tpyUKQ7Th1hR1s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-<div style="padding: 25px; margin-left: 260px; font-size: 18px;">
-	<h2><strong>HTML Attributes and Other Elements</strong></h2>
-	<div class="container">
-  <button type="button" class="btn" data-toggle="collapse" data-target="#demo" style="font-size: 14px;">Description of Video</button>
-  <div id="demo" class="collapse">
-    In This Video, you will learn about the the HTML HTML Attributes along side other HTML Element's not learnt yet in this course.
-  </div>
+<div style="width: 854px; margin-left: 220px; padding: 25px; font-size: 18px;">	
+<div id="London" class="tabcontent">
+    <h3>Description of Lesson</h3>
+  <p>In this lesson you will be learn about two of the most common element's used in HTML - the Heading and Paragraph Element. This Video has been Created by Satanshu Mishra.</p>
 </div>
 
-	
+<div id="Paris" class="tabcontent">
+  <h3>Transcript</h3>
+  <p>An accurate transcript will be added for this video at a later date.</p> 
 </div>
 
+
+<button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">Description</button>
+<button class="tablink" onclick="openCity('Paris', this, '#3498db')">Transcript</button>
+
+<script>
+function openCity(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>	
+</div>
 </font>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
