@@ -26,28 +26,34 @@
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color: #1abc9c; /* Black */
+    background-color: #292f38; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 18px;
+    text-transform: capitalize;
 }
 
 /* The navigation menu links */
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
     display: block;
+    padding-top: 15px;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
     color: white;
-	background-color: #3498db;
+	border-left: #3498db solid;
 }
 
 .sidenav-logo a:hover {
-		background-color: whitesmoke;
+		background-color: white;
+		border: none;
+		-webkit-transition: background-color 0.5s ease-out;
+        -moz-transition: background-color 0.5s ease-out;
+        -o-transition: background-color 0.5s ease-out;
+        transition: background-color 0.5s ease-out;
 	}
 
 /* Style page content */
@@ -63,7 +69,7 @@
 }
 
 .active {
-	background-color: #3498db;
+	border-left: #3498db solid;
 	color: white;
 }
 
@@ -100,20 +106,25 @@ body {font-family: "Lato", sans-serif; padding-top: 5px;}
 #Oslo {background-color:orange;}	
 </style>
 <body>
-<font face="oxygen">
-<!-- Side navigation -->
-<div class="sidenav">
- <div class="sidenav-logo" style="width: 100%; height: auto; padding-top: 0; background-color: whitesmoke;">
-  <a href="index.html"><img src="Images/Rendered-Logo-(Version-2).png" alt="Rendered-Logo" style="width: 150px; height: auto; align-items: center; background-color: whitesmoke; padding: 10px;"></a>
- </div>
-  <div style="padding-top: 20px;">
- <a class="active" href="Basic's of HTML.html">Introduction To HTML</a>
-  <a href="Basic HTML Document Layout.html">Basic HTML Document Layout</a>
-  <a href="HTML Heading and Paragraph Elements.html">HTML Heading and Paragraph Elements</a>
-  <a href="HTML Attributes and Other Elements.html">HTML Attributes and Other Elements</a>
-  </div>
-</div>
 
+<!-- Side navigation -->
+<font face="Lato">
+ <div class="sidenav">
+  <div class="sidenav-logo" style="width: 100%; height: auto; padding-top: 0; background-color: #252b33;">
+
+   <a href="index.html"><img src="Images/Rendered-Logo-(Version-2).png" alt="Rendered-Logo" style="width: 150px; height: auto; align-items: center; padding: 10px;"></a>
+
+  </div>
+ <div style="padding-top: 20px;">
+   <a class="active" href="Basic's of HTML.html">Introduction To HTML</a>
+   <a href="Basic HTML Document Layout.html">Basic HTML Document Layout</a>
+   <a href="HTML Heading and Paragraph Elements.html">HTML Heading and Paragraph Elements</a>
+   <a href="HTML Attributes and Other Elements.html">HTML Attributes and Other Elements</a>
+  </div>
+ </div>
+</font>
+
+<font face="oxygen">
 <iframe width="854" height="480" style="margin-left: 220px; padding: 25px;" src="https://www.youtube.com/embed/cmt1P5nfoFo?list=PLkpLFijnmDEzMyoMtC-tpyUKQ7Th1hR1s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <div style="width: 854px; margin-left: 220px; padding: 25px; font-size: 18px;">	
