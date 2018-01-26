@@ -1,420 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
-<link href="animate.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=outline">
-<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rancho&effect=	ice">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<title>Catalog</title>
-</head>
-<style>
-@media (min-width: 768px) {
-        .body {
+  <head>
+    <title>Rendered_Catalogue</title>
+    <link href="https://fonts.googleapis.com/css?family=Oxygen:300,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  </head>
+  <style type="text/css">
+    
+    .body {
+      
+    }
+
+    .overflow {
+      width: 10em;
+      outline: 1px solid #000;
+      margin: 5px;
+    }
+
+    div.box-HTML:hover {
+      box-shadow: 4px 4px 1px #F1F1F0;
+    }
+
+    /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 350px;
+    padding: 10px;
+    height: 232px; /* Should be removed. Only for demonstration */
 }
 
-.navbar {
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0; 
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #fff;
     overflow: hidden;
-    background-color: #ffffff;
-    position: fixed;
-    /* Set the navbar to fixed position */
-    top: 0;
-    /* Position the navbar at the top of the page */
-    width: 100%;
-    /* Full width */
-    z-index: 999;
-	}
-
-  }
-	
-.navbar-header {
-	width: 15%;
-	padding-left: 20px;
-}
-	
-.box1 h4{
-	text-align:left;
-	position:relative;
-	top:-35px;
-	padding: 25px; 
-	padding-bottom: 0px;
-	
-}
-.box1 {
-	width:25%;
-	height:190px;
-	background:#FFF;
-	float: left;
-	left: 60px;
-	bottom: 40px;
-	margin-left: 140px;
-}
-	
-
-.box1 p{
-		padding: 25px;
-	padding-top: 0px;
-	margin-bottom: 30px;
+    font-family: 'Oxygen', sans-serif;
 }
 
-	
-.box2 h4{
-	text-align:left;
-	position:relative;
-	top:-10px;
-	padding: 25px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	bottom: 8px; 
-	left: 14px;
-	
-}
-	
-.box2 p{
-		padding: 25px;
-	padding-top: 0px;
-	margin-bottom: 30px;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
 }
 
-.box2 {
-	width:25%;
-	height:180px;
-	background:#FFF;
-	float: right;
-	right: 80px;
-	bottom: 40px;
-}
-	
-.box3 h4{
-	text-align:left;
-	position:relative;
-	top:-10px;
-	padding: 25px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	bottom: 8px; 
-	left: 14px;
-	
+/* Change the color of links on hover */
+.topnav a:hover {
+  border-bottom: 5px solid #3C64C2;
+  color: black;
 }
 
-.box3 p{
-		padding: 25px;
-	padding-top: 0px;
-	margin-bottom: 30px;
-}
-	
-.box3 {
-	width:25%;
-	height:190px;
-	background:#FFF;
-	float: right;
-	right: 100px;
-	bottom: 40px;
-}
-	
-.box4 h4{
-	text-align:left;
-	position:relative;
-	top: -10px;
-	padding: 25px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	bottom: 8px; 
-	left: 14px;
-	
-	
-}
-	
-.box4 p{
-		padding: 25px;
-		padding-top: 0px;
-	margin-bottom: 30px;
+/* Add a color to the active/current link */
+.topnav a.active {
+  border-bottom: 5px solid #3C64C2;
 }
 
-.box4 {
-	width:25%;
-	height:190px;
-	background:#FFF;
-	float: right;
-	right: 120px;
-	bottom: 40px;
-	
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
 }
-	
-.box5 h4{
-	text-align:left;
-	position:relative;
-	top:-25px;
-	padding: 25px; 
-	padding-bottom: 0px;
-    padding-top: 0px;
-	bottom: 8px; 
-	left: 14px;
-	
-}
-.box5 {
-	width:25%;
-	height:220px;
-	background:#FFF;
-	float: left;
-	left: 60px;
-	bottom: 40px;
-	margin-left: 140px;
-}
-	
-
-.box5 p{
-		padding: 25px;
-	padding-top: 0px;
-	margin-bottom: 50px;
-}
-
-	
-.box6 h4{
-	text-align:left;
-	position:relative;
-	top:-25px;
-	padding: 25px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	bottom: 8px; 
-	left: 14px;
-	
-}
-	
-.box6 p{
-		padding: 25px;
-	padding-top: 0px;
-	margin-bottom: 50px;
-}
-
-.box6 {
-	width:25%;
-	height:210px;
-	background:#FFF;
-	float: right;
-	right: 80px;
-	bottom: 40px;
-}
-	
-.box7 h4{
-	text-align:left;
-	position:relative;
-	top:-25px;
-	padding: 25px;
-	padding-bottom: 0px;
-		padding-top: 0px;
-	bottom: 8px; 
-	left: 14px;
-	
-}
-
-.box7 p{
-		padding: 25px;
-	padding-top: 0px;
-	margin-bottom: 50px;
-}
-	
-.box7 {
-	width:25%;
-	height:220px;
-	background:#FFF;
-	float: right;
-	right: 100px;
-	bottom: 40px;
-}
-	
-.box8 h4{
-	text-align:left;
-	position:relative;
-	top: -35px;
-	padding: 25px;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	bottom: 8px; 
-	left: 14px;
-	
-	
-}
-	
-.box8 p{
-		padding: 25px;
-		padding-top: 0px;
-}
-
-.box8 {
-	width:25%;
-	height:220px;
-	background:#FFF;
-	float: right;
-	right: 120px;
-	bottom: 40px;
-	
-}
-/*==================================================
- * Effect 6
- * ===============================================*/
-.effect6
-{
-  	position:relative;       
-        box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-.effect6:before, .effect6:after
-{
-	content:"";
-    position:absolute; 
-    z-index:-1;
-    box-shadow:0 0 20px rgba(0,0,0,0.8);
-    top:50%;
-    bottom:0;
-    left:10px;
-    right:10px;
-    border-radius:100px / 10px;
-}
-	
 </style>
 <body>
-<font face="oxygen">
-<div class="Rendered-Navigation-Bar" style="">
-   
-    <!--Navigation Bar-->
-    
-    <div class="Navigation">
-      <nav class="navbar " style="height: 65px; background-color: #ffffff; margin-bottom: 0px; width: 100%;">
-       <div class="container-fluid" style="width: 100%;">
 
-          <!--Rendered - Logo-->
+<div class="topnav">
+  <img src="Images\Rendered-Logo-(Version-2).png" style="width: 8%; height: auto; float: left; padding: 2px; padding-left: 10px;">
+  <div class="topnav-right">
+    <a href="index.html">Home</a>
+    <a class="active" href="c">Catalog</a>
+    <a href="#">Community</a>
+  </div>
+</div>
 
-          <div class="navbar-header">
-            <a class="navbar-brand" href="index.html"><img src="Images/Rendered-Logo-(Version-2).png" alt="Rendered-Logo" style="width: 55%; height: auto; align-items: center;"></a>
-            
+<div style="margin-top: 100px; padding: 30px; padding-top: 0px; margin-left: 140px; font-family: 'Oxygen', sans-serif;">
+  <p style="font-size: 38px; font-weight: bold; color: black;">Who is a Web Developer?</p>
+
+  <p style="font-size: 16px; color: #5a5b5e font-weight:lighter;">A web developer is a programmer who creates programs and applications for the World Wide Web. A web developer knows how to build a website from the bottom up: they can create custom code to accommodate your unique needs, developing everything from the site layout to features and functions on the webpage.</p>
+
+  <p style="font-size: 16px; color: #5a5b5e">Here at Rendered we want you be the best Web Developer you can be. And the only way that is possible is if you know and understand the basic's of HTML. Start learning for free with <a class="A" href="Basic's of HTML.html">Learn HTML</a> or chose one of the many courses we have for you below.</p>
+  
+    <br><br><br>
+    <hr style="border-color: inherit; border-color: lightgrey; margin-right: 50px; margin-left: 50px;">
+    <br><br><br>
+
+
+  <p style="text-transform: uppercase; color: black; font-size: 25px; font-weight: bold; line-height: 38px">Courses</p>
+  <p style="font-size: 16px; line-height: 22px;">These courses have been designed to help you get your basic's correct. We Suggest that you start from HTML and go down the list to help keep things in order.</p>
+
+</div>
+
+  <div class="row">
+    <div class="column" style="margin-left: 150px;">
+      
+    <a class="side" href="Basic's of HTML.html">
+      <div class="box-HTML" style="height: 222px; width: 340px;">
+        <div style="height: 212px; width: 340px; top: 1713px; bottom: 1926px; left: 207px; right: 547px; box-shadow: 2px 2px 1px #F1F1F0; border-top: 10px solid #3C64C2;">
+          <div class="content" style="padding: 15px; padding-left: 22px; font-family: 'Oxygen', sans-serif;">
+            <p style="font-weight: bold; color: #5a5b5e; font-size: 19px; line-height: 22px;">Learn HTML</p>
+            <p style="font-weight: lighter; color: #5a5b5e; font-size: 15px; line-height: 23px; text-overflow: clip; white-space: nowrap; overflow: hidden;">Learn the basics of HTML which is one of <br> the  basic languages of web design. In this course you will learn the basic's of HTML through Video's, Quizes, Projects, and Much more.</p>
           </div>
+          <div style="padding: 15px; padding-top: 5px; font-family: 'Oxygen', sans-serif; font-size: 12px;">
+            <p>Not Complete</p>
+          </div>
+        </div> 
+      </div>
+    </a>
 
-          <!--Navigation Bar Tabs-->
- 		 <div class="container">
-                    <div class="navbar-collapse collapse" id="collapsingNavbar">
-                        <ul class="nav navbar-nav ml-auto navbar-right" style="margin-left: 0; padding: 5px; font-size: 16px; margin-right: 0; font-weight: lighter; line-height: 49px;">
-							<li class="active" style="background-color: white; border-bottom-color: #2c3e50; border-bottom: solid 5px #2c3e50;"><a href="Catalog.html">Catalog</a></li>
-                    </ul>
-                    </div>
-                </div>
-        </div>
-      </nav>
+    </div>
+    <div class="column">
+      
+    
+      <div class="box-HTML" style="height: 222px; width: 340px;">
+        <div style="height: 212px; width: 340px; top: 1713px; bottom: 1926px; left: 207px; right: 547px; box-shadow: 2px 2px 1px #F1F1F0; border-top: 10px solid #3C64C2;">
+          <div class="content" style="padding: 15px; padding-left: 22px; font-family: 'Oxygen', sans-serif;">
+            <p style="font-weight: bold; color: #5a5b5e; font-size: 19px; line-height: 22px;">Learn CSS</p>
+            <p style="font-weight: lighter; color: #5a5b5e; font-size: 15px; line-height: 23px; text-overflow: clip; white-space: nowrap; overflow: hidden;">Learn how to style and virtually organize <br> HTML with CSS. This course will show you how to make your HTML look and be placed how and where you want it!</p>
+          </div>
+          <div style="padding: 15px; padding-top: 5px; font-family: 'Oxygen', sans-serif; font-size: 12px;">
+            <p>Comming Soon</p>
+          </div>
+        </div> 
+      </div>
+    
+
+    </div>
+    <div class="column">
+      
+    
+      <div class="box-HTML" style="height: 222px; width: 340px;">
+        <div style="height: 212px; width: 340px; top: 1713px; bottom: 1926px; left: 207px; right: 547px; box-shadow: 2px 2px 1px #F1F1F0; border-top: 10px solid #3C64C2;">
+          <div class="content" style="padding: 15px; padding-left: 22px; font-family: 'Oxygen', sans-serif;">
+            <p style="font-weight: bold; color: #5a5b5e; font-size: 19px; line-height: 22px;">More Courses</p>
+            <p style="font-weight: lighter; color: #5a5b5e; font-size: 15px; line-height: 23px; text-overflow: clip; white-space: nowrap; overflow: hidden;">We are working hard to bring you more <br> interative and fun courses.</p>
+          </div>
+          <div style="padding: 15px; padding-top: 5px; font-family: 'Oxygen', sans-serif; font-size: 12px;">
+            <p>Comming Soonn</p>
+          </div>
+        </div> 
+      </div>
+    
+
     </div>
   </div>
-  
-<div style=" margin-right: 15%;">
-    
-<font face="oxygen">
- 
-  <div style="margin-top: 150px; padding: 30px; padding-top: 0px; margin-left: 140px;">
-  
-	<h1><strong>HTML and CSS</strong></h1>
-	
-	<p style="font-size: 18px;">HTML is the foundation behind all web pages. It's used to add structure and form to text, images, and more. CSS is the language used to style HTML content. In this course, you'll learn the fundamentals of both languages so that you can create visually appealing web pages.</p>
-	
-	<br>
-	<hr>
-	
-	<h3 style="text-transform: uppercase; color: #2D2D2D"><strong>Courses</strong></h3>
-	<p style="font-size: 18px;">These courses have been designed to help you get your basic's correct. We Suggest that you start from HTML and go down the list to help keep things in order.</p>
-  </div>
 
-  <div style="margin-top: 80px;">
-  
-	<a href="£"><div class="box2 effect6">
-	<img src="Images/Ribbon-Modified.png" style="width: 100%; height: auto;">
-		<h4><strong>Make a Website</strong></h4>
-		<p style="font-size: 18px; color: #5a5b5e; position: absolute; bottom: 8px; left: 14px;">Go into the Depth's of HTMl and CSS as you build a website.</p>
-		</div></a>
-
-
-	<a href="£"><div class="box3 effect6">
-	<img src="Images/Ribbon-Modified.png" style="width: 100%; height: auto;">
-		<h4><strong>Learn CSS</strong></h4>
-		<p style="font-size: 18px; color: #5a5b5e; position: absolute; bottom: 8px; left: 14px;">Learn to visually organize your HTMl with CSS.</p>
-		</div></a>
-	
-	
-	<a href="Basic's of HTML.html"><div class="box4 effect6">
-	<img src="Images/Ribbon-Modified.png" style="width: 100%; height: auto;">
-		<h4><strong>Learn HTML</strong></h4>
-		<p style="font-size: 18px; color: #5a5b5e; position: absolute; bottom: 8px; left: 14px;">Learn how to deploy your personal website to the personal internet.</p>
-	</div></a>
-
-
-  </div>
-
-  <div style="margin-top: 300px; padding-top: 40px;">
-  	<a href="£"><div class="box1 effect6">
-	<img src="Images/Ribbon-Modified.png" style="width: 100%; height: auto; margin-bottom: 0;">
-		<h4><strong>Learn to Publish your Website</strong></h4>
-		<p style="font-size: 18px; color: #5a5b5e; position: absolute; bottom: 8px; left: 14px;">Learn how to deploy your personal website on the the public internet.</p>
-		</div></a>
-  </div>
-  
-</font>
-</div>
-         
-<div style=" margin-right: 15%; margin-top: 280px;">
-    
-<font face="oxygen">
- 
-  <div style="margin-top: 150px; padding: 30px; padding-top: 0px; margin-left: 140px;">
-  
-	<h1><strong>JavaScript</strong></h1>
-	
-	<p style="font-size: 18px;">JavaScript is the programming language of the web. You can use it to add dynamic behavior, store information, and handle requests and responses on a website. In this course your will learn basic element's of Javascript such as data types and structures, functions, and object-oriented programming.</p>
-	
-	<br>
-	<hr>
-	
-	<h3 style="text-transform: uppercase; color: #2D2D2D"><strong>Courses</strong></h3>
-	<p style="font-size: 18px;">These courses have been designed to help you get your basic's correct. We Suggest that you start from Intrduction to JavaScript and go down the list to help keep things in order.</p>
-  </div>
-
-  <div style="margin-top: 80px;">
-  
-	<a href="£"><div class="box6 effect6">
-		<img src="Images/Java.png" style="width: 100%; height: auto;  bottom: 8px; left: 16px; bottom: 153px; right: 1000px;">
-		<h4><strong>Comming Soon</strong></h4>
-		<p style="font-size: 18px; color: #5a5b5e; position: absolute; bottom: 8px; left: 14px;">We are working hard to bring you more courses from Javascript.</p>
-		</div></a>
-
-
-	<a href="£"><div class="box7 effect6">
-	<img src="Images/Java.png" style="width: 100%; height: auto;  bottom: 8px; left: 16px; bottom: 153px; right: 1000px;">
-		<h4><strong>Comming Soon</strong></h4>
-		<p style="font-size: 18px; color: #5a5b5e; position: absolute; bottom: 8px; left: 14px;">We are working hard to bring you more courses from Javascript.</p>
-		</div></a>
-	
-	
-	<a href="£"><div class="box8 effect6" style="position: relative;">
-		<img src="Images/Java.png" style="width: 100%; height: auto; bottom: 8px; left: 16px; bottom: 153px; right: 1000px;">
-		<h4 style=""><strong>Introduction to JavaScript</strong></h4>
-		<p style="font-size: 18px; color: #5a5b5e; position: absolute; bottom: 8px; left: 14px;">Learn the fundamentals of JavaScript, enhance both the visual appearence of my website and also it's functionality an performace.</p>
-	</div></a>
-
-
-  </div>
-
-  <div style="margin-top: 300px; padding-top: 40px;">
-  	<a href="£"><div class="box5 effect6">
-	<img src="Images/Java.png" style="width: 100%; height: auto;  bottom: 8px; left: 16px; bottom: 153px; right: 1000px;">
-		<h4><strong>Comming Soon</strong></h4>
-		<p style="font-size: 18px; color: #5a5b5e; position: absolute; bottom: 8px; left: 14px;">We are working hard to bring you more courses from Javascript.</p>
-		</div></a>
-  </div>
-  
-</font>
-</div>         
-
-
-	</font>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
