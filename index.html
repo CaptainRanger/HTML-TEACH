@@ -21,40 +21,67 @@
         .body {
 			
         }
+    html,body {
+    margin:0;
+    padding:0;
+	font-family: 'Oxygen', sans-serif;
+}
 
-        .navbar {
-            overflow: hidden;
-            background-color: #ffffff;
-            position: fixed;
-            /* Set the navbar to fixed position */
-            top: 0;
-            /* Position the navbar at the top of the page */
-            width: 100%;
-            /* Full width */
-            z-index: 999;
-        }
-
+    .overflow {
+      width: 10em;
+      outline: 1px solid #000;
+      margin: 5px;
     }
-	
-	.navbar-header {
-		width: 35%;
-		padding-left: 300px;
-	}
-	
-.Title-Introduction {
-	text-transform: none;
-	text-align: left; 
-	background-color: white;
-	font-size: 35px;
-	float: left;
-	margin-right: 25%;
-	padding: 18% 0 30px 15%;
-	}
 
-  .Navi a:hover  {
-	color:#2980b9;
-	background-color: white;
-	}
+    .box-HTML:hover {
+      box-shadow: 4px 4px 1px #F1F1F0;
+    }
+
+    /* Create three equal columns that floats next to each other */
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #fff;
+    overflow: hidden;
+    font-family: 'Oxygen', sans-serif;
+    padding: 10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  border-bottom: 5px solid #3C64C2;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  border-bottom: 5px solid #3C64C2;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
 	
 .box1 h3{
 	text-align:left;
@@ -190,62 +217,44 @@
   transform: skewY(-5deg);
 }
 
+.button { /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+		
 
 	</style>
 
 <body>
-<font face="oxygen">
- <div class="Rendered" style="">
-   
-    <!--Navigation Bar-->
-    
-    <div class="Navigation">
-      <nav class="navbar" style="height: 65px; background-color: #ffffff; margin-bottom: 0px; width: 100%;">
-       <div class="container-fluid" style="width: 100%;">
+<div class="topnav">
+  		<img src="Images/Rendered-Logo-(Version-2).png" style="width: 8%; height: auto; float: left; padding: 2px; padding-left: 10px; padding-top: 10px;">
+  		<div class="topnav-right">
+    		<a class="active" href="#about">Catalog</a>
+    		<a href="RTB/Web.html">Community</a>
+  		</div>
+	</div>
 
-          <!--Rendered - Logo-->
-
-          <div class="navbar-header">
-            <a class="navbar-brand" href="Rendered-Homepage.html"><img src="Images/Rendered-Logo-(Version-2).png" alt="Rendered-Logo" style="width: 65%; height: auto; align-items: center;"></a>
-            
-          </div>
-
-          <!--Navigation Bar Tabs-->
- 		 <div class="container">
-                    <div class="navbar-collapse collapse" id="collapsingNavbar">
-                        <ul class="nav navbar-nav ml-auto navbar-right" style="margin-left: 0; padding: 5px; font-size: 18px; margin-right: 0; font-weight: lighter; line-height: 49px;">
-							<li><a class="Navi" href="Catalog.html">Catalog</a></li>
-                    </ul>
-                    </div>
-                </div>
-        </div>
-      </nav>
-    </div>
-  </div>
-
-			<div class="Introduction" style="margin-top: 65px; padding-top: 85px; padding-bottom: 85px;">
-				<table>
-	  			<tr>
-	   			<td class="Title-Introduction">
-	   			
-	   			<!--Introduction Text-->
-	   
-					<div class="animated fadeInDown" style="float: left; animation-delay: 0.8s">
-						<font face="Gotham Rounded">
-							<p  class="font-effect-outline" style=""><strong>Learn Web Design, <br> Programing & Much More</strong></p>
-							<p style="font-size: 20px;">Welcome to <strong>Rendered</strong> where we teach you the basics of Web Design, Coding and Much More and show you how to <strong class="font-effect-ice">WOW</strong> your viewers with amazing products you will learn to mark through our courses.</p>
-						</font>
-					</div>
-	   			</td>
-	   
-	   			<!--Introduction Text Image-->
-	   
-	   			<td class="animated fadeInRight" style="width: 20%; margin-left: 0px; animation-delay: 0.8s;"><img src="Images/Computer.png" 			alt="Computer" style="width: 700px; padding: 25px; padding-right: 0px; overflow: hidden; height: auto;"></td>
-	  
-	  			</tr>
-				</table>
-			</div>        
-
+	<div style="font-family: 'Oxygen', sans-serif;">
+		<div style="float: left; width: 50%; height: 665px; padding: 0; margin: 0; background-color: #00DBFF; ">
+			<br><br><br><br><br><br>
+			<img src="Images/New-Home.png" style="width: 100%; padding-left: 0px; margin-left: 0;">
+		</div>
+		<div style="width: 50%; height: 89%; padding: 0px; margin: 0; float: right; ">
+			<div style="padding-left: 60px; padding-right: 60px; padding-top: 100px;">
+				<p style="font-size: 51px; font-weight: bold;">Learning the Basic's of Web Design has never been easier!</p>
+				<p style="font-size: 21px; font-weight: lighter; line-height: 40px; margin-left: 45px; margin-right: 45px;">Welcome to Rendered where we teach you the basics of Web Design, Coding and Much More and show you how to WOW your viewers with amazing products you will learn to make through our courses.</p>
+			</div>
+		</div>
+	</div>
+			
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 			<div class="containerEf">
 	<div style="padding-top: 70px;">
 				<div class="ReadenredProcess-header" style="text-align: center; padding: 25px; padding-bottom: 35px; padding-bottom: 100px; color: white; margin-bottom: 0px;">
@@ -276,7 +285,7 @@
 						<img src="Images/Learn HTML.png" style="width: 100%; height: auto; font-weight: bolder; font-family:Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif'; line-height: 23px;">
 						<h3 style=""><strong>Learn the Basic's to HTML</strong></h3>
 						<p style="font-size: 20px; color: #5a5b5e;">Learn the basics of HTML through Video's, Interactive Quizes, and Projects.</p>
-						<button class="btn-primary" style="float: right;"><a href="Catalog.html" style="color: white;"><strong>Get Started Today!</strong></a></button>
+						<button style="float: right;"><a href="Catalog.html" style="color: white;"><strong>Get Started Today!</strong></a></button>
 					</div>
 
 				</div>
@@ -284,39 +293,43 @@
 			</div>
 	  
 	 
-<div class="Title-Introduction" style="background-color: white; padding-top: 50px; padding-bottom: 60px;">
-				<div class="" style="float: left; background-color: white;">
-							<img src="Images/Rendered-Logo-(Version-2).png" alt="Rendered-Logo" style="width: 15%; height: auto; align-items: center; background-color: white;">
-						<font face="oxygen">
-							<h2>A Message from the Creator</h2>
-							<p style="font-size: 22px;">Here's a quote from the creator of <strong>Rendered</strong> himself talking about why he chose to learn Webs Design and why you should be be a part of this Rendered community.</p>
-						</font>
-					</div>
-					
-					<img style="padding: 18% 0 0 15%; padding-top: 0; width: 20%; height: auto; float: left;" src="Images/Quotes.png">
-				<font face="oxygen"><p style="font-size: 22px; padding-left: 80px; font-weight: lighter;"><em>"Programing for me personally is very exiting and fun. There's Always Something to do, Something New to Learn, and Something to challenge me. I got into programming because it was challenging. I created <strong>Rendered</strong> for through out there looking for new challenges to cover come. Rendered aims to be the modern, Free of charge, Simple, and a place where you can learn about Web Design. We make sure that you have got the basic correct because when you do, that alone can take you a long way in this particular field."</em></p></font>
-				
-				<br>
-				
-				<img src="http://www.onsiteinspecting.com/wp-content/uploads/2016/02/male-user.png" style="width: 10%; height: auto; padding-left: 25px; float: left;">
-				<div style="font-size: 19px; padding-left: 120px;"><font face="oxygen"><p><strong>Satanshu Mishra</strong></p>
-				<p style="text-indent: 30px;">Developer and Creator of Rendered</p></font></div>
-				
-</div>
+
 	  
- <div class="BeginToday" style="height: 550px; text-align: center; 1000; font-size: 22px; margin-top: 650px; padding-left: 415px; padding-right: 430px; padding-top: 130px; background-color: #2ecc71; color: white;">
- 	<font face="oxygen" style="font-weight: lighter;"><h2>Join Today and Start Learning for Free!</h2><br>
- 	<p>Rendered is the most simplest, free of cost, interactive website to learn the Basics of Web Design From with many Videos, Interactive Activities, Quizes, and much more to help you get the basic's right.</p><br><br>
- 	<button class=".btn-default" style="width: 195px; height: auto;"><a href="Catalog.html">Get Started Today!</a></button></font>
+ <div class="BeginToday" style="height: 750px; text-align: center; 1000; font-size: 22px; margin-top: -100px; padding-left: 415px; padding-right: 430px; padding-top: 250px; color: black;">
+ 	<h2 style="font-weight: bold;">Join Today and Start Learning for Free!</h2><br>
+ 	<p style="font-weight: lighter;">Rendered is the simplest, mordern, and reliable place on the internet to learn the basic's of Programming.</p><br><br>
+ 	<p class="button" style="padding: 20px; background-color: royalblue; font-family: 'Oxygen', sans-serif; color: white;"><a style="color: white" href="Catalog.html">Get Started Today!</a></p>
  </div>
 
+<div style="padding-bottom: 100px; border-bottom: 10px solid #3C64C2<a>">
+	<div style="padding: 50px; background-color: white;">
+		<ol style="list-style: none; width: 18%; float: left">
+			<li style="padding-top: 20px; font-weight: bold;">Visit Other Rendered Pages</li>
+			<hr style="width: 100%;">
+			<li style=""><a href="index.html">Home</a></li>
+			<li style="padding-top: 10px;"><a href="Catalog.html">Catalog</a></li>
+			<li style="padding-top: 10px;"><a href="RTB/Web.html">Community Fourms</a></li>
+		</ol>
+		
+		<ol style="list-style: none; width: 18%; float: left">
+			<li style="padding-top: 20px; font-weight: bold;">Visit Rendered Courses</li>
+			<hr style="width: 100%;">
+			<li style=""><a href="/Basic's of HTML.html">Learn HTML</a></li>
+			<li style="padding-top: 10px;">Learn CSS</li>
+		</ol>
+		
+		<ol style="list-style: none; width: 18%; float: left">
+			<li style="padding-top: 20px; font-weight: bold;">Contact Us</li>
+			<hr style="width: 100%;">
+			<li style="">See any bug or Error? Report them here:</li>
+			<li style="padding-top: 10px;">satanshumishra2018@gmail.com</li>
+		</ol>
+		<br><br><br>
+		<ol style="list-style: none; width: 18%; float: right">
+			<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+		</ol>
+	</div>
+</div>
 
-
-        <footer class="page-footer" style="background-color: white;">
-        
-			<img src="Images/Rendered-Logo-(Version-2).png" alt="Rendered-Logo" style="width: 8%; height: auto; align-items: center; background-color: white; padding: 10px; padding-top: 50px;">
-       		<div style="float: right; background-color: white; padding-left: 500px; text-align: center; padding: 10px;"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons<br> Attribution-ShareAlike 4.0 <br> International License</a>.</div>
-	</footer>
-        </font>   
 	</body>
 </html>
